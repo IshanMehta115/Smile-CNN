@@ -47,7 +47,7 @@ Visit `http://localhost:5000` in your web browser to access the application.
 - Enjoy the interactive real-time smile detection experience!
 <br><br>
 # Contributing
-We welcome contributions from the open-source community! If you have any suggestions, improvements, or bug fixes, please feel free to create a pull request.
+I welcome contributions from the open-source community! If you have any suggestions, improvements, or bug fixes, please feel free to create a pull request.
 <br><br>
 #  License
 This project is licensed under the [MIT License](LICENSE).
