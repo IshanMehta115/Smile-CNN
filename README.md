@@ -1,10 +1,14 @@
 # Smile-CNN
 ## Realtime Face Detection and Smile Prediction
 
-This project was done in the Machine Learning Internship conducted by Indian Institute of Technology Bhubaneswar.
+<p align="center">
+  <img src="https://github.com/IshanMehta115/Smile-CNN/blob/main/screenshot.PNG" alt="Webpage Screenshot" width="800px">
+</p>
+
+
+### This project was done in the Machine Learning Internship conducted by [Indian Institute of Technology Bhubaneswar](https://www.iitbbs.ac.in/).
+
 <br><br>
-Prerequisites
-Installation
 ## Table of Contents
 
 1. [Features](#features)
