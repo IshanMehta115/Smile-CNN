@@ -33,9 +33,9 @@
 - Python 3.x
 - Virtualenv (optional, but recommended)
 ## Installation
-1. Clone the GitHub repository: `something here`
-2. (Optional) Set up a virtual environment (recommended): `virtualenv venv`
-3. Install the required dependencies: `pip install -r requirements.txt`
+1. Clone the GitHub repository:<br> `git clone https://github.com/IshanMehta115/Smile-CNN.git`
+2. (Optional) Set up a virtual environment (recommended): <br>`virtualenv venv`
+3. Install the required dependencies: <br>`pip install -r requirements.txt`
 <br><br>
 # Running the Flask App
 Execute the following command the run the app: `python app.py`<br>
