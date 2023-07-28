@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" as="style" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <title>Smile CNN</title>
+    <style>
+        .my-bg {
+            background-image: url("{{ url_for('static', filename='images/bg-image-3.jpeg') }}");
+        }
+    </style>
+</head>
+
+<body class="bg-indigo-200">
+    <div
+        class="h-screen w-100 my-bg bg-no-repeat bg-cover bg-fixed bg-center flex flex-col items-center justify-center">
+        <p class="text-white text-4xl my-heading font-bold md:text-6xl">Smile-CNN</p>
+        <div class="text-white mt-5">
+            <a class="transition ease-in-out m-2 hover:bg-indigo-900 bg-indigo-500 p-2 px-3 rounded-lg"
+                href="run">Run</a>
+            <a class="transition ease-in-out m-2 hover:bg-indigo-900 hover:cursor-pointer bg-indigo-500 p-2 rounded-lg"
+                onclick="my_smooth_scroll('about')">About</a>
+        </div>
+    </div>
+    <br><br>
+    <p id="about" class="text-transparent mb-10"></p>
+    <p class="text-3xl md:text-4xl text-center">About Smile-CNN</p>
+    <br>
+    <hr><br>
+    <div class="p-4 md:p-7">
+        <p class="text-2xl px-4 md:px-7">Table of Contents</p><br>
+        <ol class="list-decimal mx-2 px-4 md:px-7">
+            <li><a class="hover:cursor-pointer hover:bg-indigo-400 transition ease-in-out"
+                    onclick="my_smooth_scroll('description')">Description</a></li>
+            <li><a class="hover:cursor-pointer hover:bg-indigo-400 transition ease-in-out"
+                    onclick="my_smooth_scroll('development')">Development</a></li>
+            <li><a class="hover:cursor-pointer hover:bg-indigo-400 transition ease-in-out"
+                    onclick="my_smooth_scroll('key_features')">Key Features</a></li>
+        </ol><br><br>
+        <p id="description" class="text-2xl">Description:</p><br>
+        <p>This project was created by Ishan Mehta during the Machine Learning Internship conducted by <a class="hover:cursor-pointer hover:bg-indigo-400 transition ease-in-out underline underline-offset-4"
+            href="https://www.iitbbs.ac.in/" target="_blank">Indian Institute
+            of Technology Bhubaneswar.</a>This project is a Flask web application designed to detect smiles in real-time video streams from the user's
+            webcam.
+            Leveraging computer vision and deep learning techniques, the application accesses the webcam using OpenCV,
+            detects faces
+            with Haarcascade, and employs a custom Convolutional Neural Network (CNN) model to predict whether the
+            detected face is
+            smiling or not.</p><br><br>
+        <p id="development" class="text-2xl">Development:</p><br>
+        <p> All files of this project are available on the GitHub
+            repository: <a class="hover:cursor-pointer hover:bg-indigo-400 transition ease-in-out underline underline-offset-4"
+                href="https://www.google.com/" target="_blank">Google dot com</a> Feel free to explore, provide feedback, and contribute to its
+            development.
+        </p><br><br>
+        <p id="key_features" class="text-2xl">Key Features:</p><br>
+        <strong>Flask Web Application:</strong>
+        <p>This project is built using Flask, micro web framework written in Python. It supports HTTPS requests to
+            multiple pages, GET requests from XML-HTTP-request object.</p><br><br>
+        <strong>Webcam Access with OpenCV:</strong>
+        <p>The website utilizes OpenCV, a powerful computer vision library, to access the user's webcam and capture live
+            video
+            frames. OpenCV provides the necessary tools for real-time image and video processing.</p><br><br>
+        <strong>Face Detection using Haarcascade:</strong>
+        <p>Haarcascade is employed to perform face detection within each video frame. This pre-trained model is highly
+            effective in
+            identifying faces, enabling precise localization of facial features.</p><br><br>
+        <strong>Custom CNN Model for Smile Prediction:</strong>
+        <p>I trained a custom CNN model on a dataset comprising of smiling and non-smiling facial images. This model
+            learns to
+            recognize smile-associated features, enabling accurate smile detection.</p><br><br>
+        <strong>Tailwind CSS Styling:</strong>
+        <p>The webpage's user interface is beautifully designed using Tailwind CSS, a utility-first CSS framework.
+            Tailwind CSS
+            offers a wide range of pre-defined classes, streamlining the development of visually appealing and
+            responsive web
+            components.</p><br><br>
+        <strong>Real-time Data Display using AJAX:</strong>
+        <p>AJAX is implemented to make asynchronous GET requests to the server and fetch smile detection predictions in
+            real-time.
+            As the CNN model processes each frame, the predictions are sent to the frontend through AJAX, enabling
+            seamless and
+            dynamic updates to the user interface.</p><br><br>
+        <br>
+        <p>This Real-time Smile Detection Web Application provides a captivating user experience by leveraging
+            state-of-the-art
+            technologies in computer vision, deep learning, and web development. Users can enjoy watching their smiles
+            detected in
+            real-time as the application provides instantaneous and accurate smile predictions using the custom-trained
+            CNN model.</p><br><br>
+
+
+
+    </div>
+</body>
+
+</html>

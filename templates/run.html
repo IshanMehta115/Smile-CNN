@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js" defer></script> 
+    <script src="https://docs.opencv.org/4.5.3/opencv.js"></script>
+    <script src="{{ url_for('static', filename='js/run.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Run</title>
+</head>
+<body>
+    <div class="h-screen">
+        <div class="my-display-screen flex flex-row justify-end items-center bg-indigo-900">
+            <div class="flex flex-col bg-indigo-500 w-full">
+                <h1 class="text-center text-3xl text-white">Results</h1>
+                <p id="face_detected_result" class="px-3">Face Detected: NO</p><br>
+                <p id="prob_smiling_result" class="px-3">Probability of smiling: NA</p><br>
+                <p id="prob_not_smiling_result" class="px-3">Probability of not smiling: NA</p><br>
+                <p id="final_prediction_result" class="px-3">Final Prediction: NA</p><br>
+                <a class="text-center transition ease-in-out m-1 hover:bg-indigo-900 bg-indigo-500 p-1 rounded-lg scroll-link text-white mx-auto" href="/">Home</a>
+            </div>
+            {% if not error_message %}
+            <img src="{{ url_for('video_feed') }}" class="h-full pt-1"></img>
+            {% else %}
+            <p>{{ error_message }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

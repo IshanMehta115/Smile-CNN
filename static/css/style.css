@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.my-heading {
+    font-family: 'Montserrat', 'Arial';
+}
+hr {
+    border-color: black;
+    border-width: 5px;
+}
+.my-display-screen{
+    height: 90%;
+}
