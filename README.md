@@ -1,5 +1,5 @@
 # Smile-CNN
-## Realtime Face Detection and Smile Prediction
+## Realtime Face and Smile Detection
 
 <p align="center">
   <img src="https://github.com/IshanMehta115/Smile-CNN/blob/main/screenshot.PNG" alt="Webpage Screenshot" width="800px">
@@ -23,7 +23,8 @@
 
 <br><br>
 # Features
-- Real-time face detection and smile prediction
+- Real-time face detection using haarcascade
+- Real-time smile detection using Convolution Neural Networks (CNN) 
 - Built with Flask web framework and Tailwind CSS for styling
 - AJAX GET XMLHttpRequest for dynamic real-time updates
 - OpenCV for webcam access and image processing
