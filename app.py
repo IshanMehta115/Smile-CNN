@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 error_message = None
 camera = None
-face_cascade = cv2.CascadeClassifier('harcascades/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 
 SmileCNN_model = tf.keras.models.load_model('cnn_model\SmileCNN.h5')
 
