@@ -7,7 +7,7 @@
 
 <br>
 
-### This project was done in the Machine Learning Internship conducted by [Indian Institute of Technology Bhubaneswar](https://www.iitbbs.ac.in/).
+### This project was done in the Machine Learning Internship conducted by [Indian Institute of Technology Bhubaneswar](https://www.iitbbs.ac.in/)
 
 <br><br>
 ## Table of Contents
